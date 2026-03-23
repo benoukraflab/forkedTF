@@ -5,14 +5,14 @@
 #' @param format [character] the "transfac" option will output a standard transfac matrix per binding partner. The "FPWMtransfac" prints a single matrix with all the binding partners in FPWM format.
 #' @param fileName [character] name of the file where the FPWM is going to be written.
 #' @return A plain text file with the FPWM in transfac or FPWMtransfac format.
-#' @keywords write.FPWM
+#' @keywords writeFPWM
 #' @export
 #' @examples
 #' fpwm <- createFPWM(mainTF = "CEBPB", partners = c("ATF4","ATF7","ATF3"), cell = "K562", forkPosition = 5)
-#' write.FPWM(FPWM = fpwm, format = "transfac", fileName = "FPWM.tf" )
-#' write.FPWM(FPWM = fpwm, format = "FPWMtransfac", fileName = "FPWM.FPWMtf" )
+#' writeFPWM(FPWM = fpwm, format = "transfac", fileName = "FPWM.tf" )
+#' writeFPWM(FPWM = fpwm, format = "FPWMtransfac", fileName = "FPWM.FPWMtf" )
 
-write.FPWM <- function(FPWM = NULL,
+writeFPWM <- function(FPWM = NULL,
                        format = "transfac",
                        fileName = NULL) {
 
