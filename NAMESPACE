@@ -1,7 +1,7 @@
 export('miniCofactorReport')
 export('createFPWM')
 export('plotFPWM')
-export('write.FPWM')
+export('writeFPWM')
 export('extractEnrichment')
 export('importChromSizes')
 export('loadChromFile')
